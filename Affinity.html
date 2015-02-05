@@ -9,8 +9,8 @@
 BODY {
 	background-image: url("Background.jpg")
 	background-position: top, center;
-	background-repeat: no-repeat;
-	background-size: 100% 12%;
+	background-repeat: repeat;
+	background-size: 2000px 200px;
 	background-color: #FFFFFFFF;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -67,10 +67,15 @@ body,td,th {
 			width: 90%;
 		}
 		
-		h3
+		#csslogin a
 		{
-			font-family: Book Antiqua, Helvetica, sans-serif;
-			font-color: black;
+			color: blue;
+		}
+		
+		#csstitle p
+		{
+			font-family: Atlas,Calibri, Book Antiqua, Helvetica, sans-serif;
+			color: #6A6D6E;
 			font-size: 28pt;
 		}
 		h6
@@ -87,10 +92,10 @@ body,td,th {
     <script type='text/javascript' src='camera.min.js'></script>
     <!-- Style for camera-->
 	
-	<script src="sliderengine/jquery.js"></script>
-    <script src="sliderengine/amazingslider.js"></script>
-    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
-    <script src="sliderengine/initslider-1.js"></script>
+	<script src="jquery.js"></script>
+    <script src="amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="amazingslider-1.css">
+    <script src="initslider-1.js"></script>
     <script type="text/javascript">
 	<!-- Style for slider -->
 		jQuery(function(){
@@ -110,16 +115,18 @@ body,td,th {
  
 <title>Affinity Travel Agency</title>
 </head>
-<body background="Background.jpg" bgcolor="#f2f5fa" >
+<body background="Background.jpg"  bgcolor="#f2f5fa" >
 <!-- Logo -->
 <TABLE WIDTH="100%" ALIGN="LEFT">
 	<TR>
 		<TD ALIGN="LEFT">
 			<a href="Affinity.html">  <img src="Logo2.png" width="360px" height="180px" alt=""/></A>
 		</TD>
+		
 		<td align="right" valign="top">
-			<h6><u>Login | Cart</u></h6>
+			<h6><u><A HREF="Login.html"></A>| Cart</u></h6>
 		</td>
+		</div>
 		<td width="8%">
 		</td>
 	</TR>
@@ -127,72 +134,78 @@ body,td,th {
 
 <br />
 <!--Navigation bar-->
+
 <TABLE WIDTH="100%" BACKGROUND="opaque_drk.png" ALIGN="CENTER" bgcolor="#515151">
 	<TR>
-		<td width="22%">
+		<td width="20%">
 		</td>
-		<TD ALign="Center" width="78%">
+		<TD ALign="Center" width="60%">
 			<div id='cssmenu'>
 				<ul>
 				   <li class='active'><a href='Affinity.html'><span>Home</span></a></li>
-				   <li><a href='Cruise.html'><span>Cruise</span></a></li>
-				   <li><a href='Resort.html'><span>Resort</span></a></li>
-				   <li class='last'><a href='CaliAdv.html'><span>California Adventure</span></a></li>
-				   <li class='last'><a href='Testimonials.html'><span>Testimonials</span></a></li>
+				   <li class='last'><a href='PlanYourVacation.html'><span>Plan Your Vacation</span></a></li>
+				   <li><a href='Resort.html'><span>Travel Info</span></a></li>
+				   <li class='last'><a href='CaliAdv.html'><span>Activities</span></a></li>
+				   <li class='last'><a href='Testimonials.html'><span>Deals</span></a></li>
 				   
 				</ul>
 			</div>
 		</TD>
+		<td width="20%">
+		</td>
 	</TR>
 </TABLE>
-<br />
-
+<table width="1180px" align="center" bgcolor="#BEE8EB" background="opaque.png">
+<tr>
+<td>
 <!--Gallery-->
-<table width="1480px" align="center" bgcolor="lightblue">
+<table width="1100px" height="480px" background="opaque.png" align="center" bgcolor="#BEE8EB">
 <tr>
 <td align="center">
-<div style="width:900px;height:360px;">
-	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="900" height="360" id="slideful" align="center">
-		<param name="movie" value="http://c.slideful.com/1/201502/04/0505629925207060/player10670_dscrt_sides_arrowsimple.swf?fr=260&w=900&h=360&s=7&tr=fis&n=5"/>
+<br />
+<div style="width:1060px;height:460px;">
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1060" height="460" id="slideful">
+		<param name="movie" value="http://c.slideful.com/1/201502/04/1027564487207060/player10670_dscrt_sides_arrowsimple.swf?fr=280&frth=-3&w=1060&h=460&s=7&tr=fis&n=5"/>
 		<param name="bgcolor" value="#FFFF00"/>
 		<param name="quality" value="high"/>
 		<param name="allowscriptaccess" value="always"/>
 		<param name="wmode" value="transparent"/>
 		<!--[if !IE]>-->
 		<object type="application/x-shockwave-flash"
-		width="900" height="360"
-		data="http://c.slideful.com/1/201502/04/0505629925207060/player10670_dscrt_sides_arrowsimple.swf?fr=260&w=900&h=360&s=7&tr=fis&n=5" id="slideful">
+		width="1060" height="460"
+		data="http://c.slideful.com/1/201502/04/1027564487207060/player10670_dscrt_sides_arrowsimple.swf?fr=280&frth=-3&w=1060&h=460&s=7&tr=fis&n=5" id="slideful">
 		<param name="bgcolor" value="#FFFF00"/>
 		<param name="quality" value="high"/>
 		<param name="allowscriptaccess" value="always"/>
 		<param name="wmode" value="transparent"/>
-		</object>
-	<!--<![endif]-->
 	</object>
-</tr>
+<!--<![endif]-->
+</object>
 </div>
 </td>
+</tr>
 </table>
     <!-- .fluid_container -->
 	
 	<br />
-	<table align="center" width="900px" border=0>
-
+	<table align="center" width="900px" border=0 cellspacing="0">
+		<tr>
+			<td align="center" width="400px">
+			<div id="csstitle">
+				<p align="center">
+					<u>Follow Us To Remarkable Destinations</u>
+				</p>
+			</div>
+			</td>
+		</tr>
 		</table>
 	<table cellspacing="25" align="center" width="900px" border=0>
 		<tr>
-			<td align="center" width="400px">
-				<h3 align="center">
-					Follow us to remarkable destinations
-				</h3>
-			</td>
-		</tr>
-		<tr>
 			<td width="40%" align="right">
-				<img src="Ship.png" height="200" width="330" alt="Hawaii" />
+				<img src="HawaiiButton.jpg" height="280" width="350" alt="Hawaii" />
 			</td>
 			<td width="40%" align="left">
-				<img src="Ship.png" height="200" width="330" alt="Alaska Cruise" />
+				<img src="DisneyButton.jpg" height="280" width="350" alt="Alaska Cruise" />
 			</td>
 		</tr>
 	</table>
@@ -203,12 +216,15 @@ body,td,th {
 			</td>
 		</tr>
 	</table>
+</td>
+</tr>	
+</table>
 	
 	<br />
 
     
 <!-- Our Agency-->
-<TABLE WIDTH="1480px" BACKGROUND="opaque.png" ALIGN="CENTER" border=0 bgcolor="#DBDBDB">
+<TABLE WIDTH="1200px" BACKGROUND="opaque.png" ALIGN="CENTER" border=0 bgcolor="#DBDBDB">
       <tr><TD><h1 align="center">Our Agency</h1></tr></td>
       <tr><TD><p align="center">Affinity Travel Agency is a company that ensures the complete satisfaction of its consumers. Whether you decide on the Cruise, Resort or California adventure our friendly staff will be there every step of the way to ensure that you have the best time you could possibly have. We feature great entertainment, food, and cultivate experiences that you will never forget. If that was not enough, Affinity travel provides competitive pricing and unique payment plans that will meet the specific needs of every individual.</p>
       </TD>
@@ -220,7 +236,7 @@ body,td,th {
 
 
 
-<TABLE border=0 width="1520px" background="opaque.png" align="center" bgcolor="lightblue">
+<TABLE border=0 width="1260px" background="opaque.png" align="center" bgcolor="lightblue">
 	<tr>
 		<TD align="center">
 			<p>Affinity Travels Agency <br />New York Travelling HQ <br /> 1-800-RESORTS</p>
@@ -228,7 +244,7 @@ body,td,th {
 	</tr>
 	<tr bgcolor="lightblue">
 	<td align="center">
-		<p style="">© Copyright Affinity IT Squad web design powered by Overflow System</p>
+		<p style="">&copy; Copyright Affinity IT Squad web design powered by Overflow System</p>
 	</td>
 	</tr>
 </TABLE>

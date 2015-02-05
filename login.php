@@ -1,15 +1,259 @@
-<HTML>
-<HEAD>
-</HEAD>
-<BODY>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1-transitional">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+<!--
+BODY {
+	background-image: url("Background.jpg")
+	background-position: top, center;
+	background-repeat: no-repeat;
+	background-size: 100% 25%;
+	background-color: #FFFFFFFF;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-attachment: scroll;
+	background-position: left top;
+}
+
+#logo div img {
+	margin-top: -27px;
+	margin-right: -27px;
+	margin-bottom: -27px;
+	margin-left: -27px;
+}
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000000;
+	background-repeat: no-repeat;
+	}
+.form-container {
+   border: 5px solid #f2e3d2;
+   background: #c9b7a2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f2e3d2), to(#c9b7a2));
+   background: -webkit-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -moz-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -ms-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background: -o-linear-gradient(top, #f2e3d2, #c9b7a2);
+   background-image: -ms-linear-gradient(top, #f2e3d2 0%, #c9b7a2 100%);
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   horizontal-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:300px;
+   }
+.form-field {
+   border: 2px solid #c9b7a2;
+   background: #ffffff;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   color: #000000;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 1px 1px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   }
+.form-field:focus {
+   background: #fff;
+   color: #725129;
+   }
+.form-container h2 {
+   text-shadow: #fdf2e4 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   horizontal-align: middle;
+   font-weight:bold;
+   text-align:center;
+    }
+.form-title {
+   margin-bottom:10px;
+   color: #725129;
+   text-shadow: #fdf2e4 0 1px 0;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:right;
+   }
+.submit-button {
+   border: 4px solid #51752a;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #addc7e 0 1px 0;
+   color: #080808;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.submit-button:hover {
+   border: 4px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+   }
+.submit-button:active {
+   text-shadow: #31540c 0 1px 0;
+   border: 4px solid #447314;
+   background: #8dc059;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
+   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+   background: -moz-linear-gradient(top, #6aa436, #8dc059);
+   background: -ms-linear-gradient(top, #6aa436, #8dc059);
+   background: -o-linear-gradient(top, #6aa436, #8dc059);
+   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+   color: #fff;
+   }
+-->
+</style> 
+<link rel="shortcut icon" href="favicon.ico.png" />
+<meta http-equiv="Content-Type" content="text/html; charset= utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<link rel='stylesheet' id='camera-css'  href='camera.css' type='text/css' media='all' /> 
+	</style>
+    <script type='text/javascript' src='jquery.min.js'></script>
+    <script type='text/javascript' src='jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='camera.min.js'></script>
+    <!-- Style for camera-->
+	
+	<script src="jquery.js"></script>
+    <script src="amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="amazingslider-1.css">
+    <script src="initslider-1.js"></script>
+    <script type="text/javascript">
+	<!-- Style for slider -->
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true
+			});
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
+ 
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: #FF00FF;
+		}
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 90%;
+		}
+		</style>
+<title>Affinity Travel Agency</title>
+</head>
+<body background="Background.jpg" bgcolor="#f2f5fa" >
+<!-- Logo -->
+<TABLE WIDTH="100%" ALIGN="LEFT">
+	<TR>
+		<TD ALIGN="LEFT">
+			<a href="Affinity.html">  <img src="Logo2.png" width="360px" height="180px" alt=""/></A>
+		</TD>
+		<td align="right" valign="top">
+			<h6><u><A HREF="Login.html">Login</A>| Cart</u></h6>
+		</td>
+		<td width="8%">
+		</td>
+	</TR>
+</TABLE>
+
+<br />
+<!--Navigation bar-->
+<TABLE WIDTH="100%" BACKGROUND="opaque_drk.png" ALIGN="CENTER" bgcolor="#515151">
+	<TR>
+		<td width="20%">
+		</td>
+		<TD ALign="Center" width="80%">
+			<div id='cssmenu'>
+				<ul>
+				   <li class='last'><a href='Affinity.html'><span>Home</span></a></li>
+				   <li class='last'><a href='PlanYourVacation.html'><span>Plan Your Vacation</span></a></li>
+				   <li><a href='Resort.html'><span>Travel Info</span></a></li>
+				   <li class='last'><a href='CaliAdv.html'><span>Activities</span></a></li>
+				   <li class='last'><a href='Testimonials.html'><span>Deals</span></a></li>
+				   
+				</ul>
+			</div>
+		</TD>
+	</TR>
+</TABLE>
+<br />
+
 <?php
+function getInnerSubstring($string,$delim)
+{
+    // "foo a foo" becomes: array(""," a ","")
+    $string = explode($delim, $string, 3); // also, we only need 2 items at most
+    // we check whether the 2nd is set and return it, otherwise we return an empty string
+    return isset($string[1]) ? $string[1] : '';
+}
 function returnLine($fname)
 {
 	$lines= file('/home/sylsr/www/html/passwordReadWrite.txt') or die("Unable to open file");
 	$line_number = false;
+	$substring=getInnerSubstring($fname,"*");
 	while (list($key, $line) = each($lines) and !$line_number)
 	{
-	   $line_number = (strpos($line, $fname) !== FALSE) ? $key + 1 : $line_number;
+		while($substring!=null)
+		{
+			$line_number = (strpos($line, $fname) !== FALSE) ? $key + 1 : $line_number;
+		}
 	}
 	return $line_number;
 }
@@ -21,7 +265,6 @@ $usernameLNum =returnLine($search1);
 $passwordLNum =returnLine($search2);
 if($usernameLNum==$passwordLNum)
 {
-	session_start();
 	$_SESSION['usernameL'];
 	$_SESSION['passwordL'];
 	echo "You have sucessfully logged in.";
@@ -33,5 +276,20 @@ else
 
 ?>
 
-</BODY>
-</HTML>
+<TABLE border=0 width="1520px" background="opaque.png" align="center" bgcolor="lightblue">
+	<tr>
+		<TD align="center">
+			<p>Affinity Travels Agency <br />New York Travelling HQ <br /> 1-800-RESORTS</p>
+		</td>
+	</tr>
+	<tr bgcolor="lightblue">
+	<td align="center">
+		<p style="">&copy; Copyright Affinity IT Squad web design powered by Overflow System</p>
+	</td>
+	</tr>
+</TABLE>
+
+<br />
+
+</body>
+</html>
